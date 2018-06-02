@@ -1,0 +1,21 @@
+{
+  "fitbit": {
+    "appUUID": "32c1a311-d679-432f-b5c6-024444b7ad73",
+    "appType": "app",
+    "appDisplayName": "Habit Tracker",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#607d8b",
+    "requestedPermissions": [
+      "access_internet"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Habit Tracker"
+      }
+    }
+  }
+}

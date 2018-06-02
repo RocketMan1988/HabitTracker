@@ -1,0 +1,125 @@
+.defaultText {
+  font-size: 32;
+  font-family: System-Regular;
+  font-weight: regular;
+  text-length: 32;
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+  fill: white;
+}
+
+#container text {
+  font-size: 28;
+  font-family: System-Regular;
+  font-weight: regular;
+  text-length: 32;
+  fill: white;
+  x: 100%-10;
+  y: 25%-10;
+  text-anchor: end;
+}
+
+#container textarea {
+  font-size: 20;
+  font-family: System-Regular;
+  font-weight: regular;
+  text-length: 64;
+  fill: white;
+  x: 10%-32;
+  y: 0%+64;
+  width: 100%-32;
+  height: 100%-64;
+  text-anchor: end;
+
+}
+
+.panoramaview text {
+  font-size: 28;
+  font-family: System-Regular;
+  font-weight: regular;
+  text-length: 32;
+  fill: white;
+  x: 100%-10;
+  y: 25%-10;
+  text-anchor: end;
+}
+
+.panoramaview textarea {
+  font-size: 20;
+  font-family: System-Regular;
+  font-weight: regular;
+  text-length: 64;
+  fill: white;
+  x: 10%-32;
+  y: 0%+64;
+  width: 100%-32;
+  height: 100%-64;
+  text-anchor: end;
+
+}
+
+.panoramaview-item text {
+  font-size: 64;
+  font-family: System-Regular;
+  font-weight: regular;
+  text-length: 32;
+  fill: white;
+  x: 100%-10;
+  y: 5%+64;
+  text-anchor: Start;
+}
+
+.panoramaview-item image {
+  height: 32;
+  width: 32;
+  x: 100%-34;
+  y: 0%;
+}
+
+
+.tile-list-item {
+  height: 80;
+}
+
+
+.tile-list-item text {
+  font-family: System-Regular;
+  font-size: 32;
+  text-length: 64;
+  fill: "white";
+  x: 80;
+  text-anchor: start;
+}
+
+#textTwo {
+  font-family: System-Regular;
+  font-size: 18;
+  text-length: 64;
+  fill: "white";
+  x: 80;
+  y: 100%-5;
+  text-anchor: start;
+}
+
+.tile-list-item image {
+  x: 0%+5;
+  y: 5;
+}
+
+.tile-divider-bottom {
+  x: 0;
+  y: 100%-2;
+  width: 100%;
+  height: 2;
+  fill: #A0A0A0;
+}
+
+
+
+
+#tumbler { y: 50%-55; }
+.item { height: 90; }
+.item text { font-size: 80; fill: white; x: 5;  }
