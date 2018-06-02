@@ -108,20 +108,28 @@ function GetHabitsid(indexNumber) {
   return habitsJSON[indexNumber]["id"]
 }
 function GetHabitsValue(habit_id) {
+
+  let text2 = readFileSync("/private/data/habits_log.json", "json");
+  console.log(text2);
+  habits_log_JSON = text2;
   
-  let text = readFileSync("/private/data/habits_log.json", "json");
-  habits_log_JSON = text;
-  
-  if (habit_id == habits_log_JSON[i]["habit_id"]) 
-    { 
-        i = i + 1;
-        return habits_log_JSON[i-1]["value"];  
-    }
-  else
-    {
-      return 0;
-    }
-  
+
+  try {
+    if (habit_id == habits_log_JSON[i]["habit_id"]) 
+      { 
+          i = i + 1;
+          return habits_log_JSON[i-1]["value"];  
+      }
+    else
+      {
+        return 0;
+      }
+  }
+  catch(error) {
+    console.error("No Habits Logged for Today");
+    return 0;
+  }
+
 }
 
 
@@ -190,6 +198,9 @@ VTList.delegate = {
       info.habit_id = GetHabitsid(info.index);
       tile.getElementById("text").text = GetHabitsName(info.index);
       tile.getElementById("textTwo").text = GetHabitsDecription(info.index);
+      
+      console.log(GetHabitsid(info.index));
+      
       var tempVar = GetHabitsValue(GetHabitsid(info.index));
       if (tempVar == 5)
         {
